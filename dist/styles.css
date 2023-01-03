@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#root {
+    display: flex;
+}
+
+.side-panel {
+    background-color: #059669;
+    width: max(25vw, 240px);
+    height: 100vh;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.side-panel-links {
+    padding: 1rem;
+}
+
+.side-panel-links>ul>li {
+    list-style: none;
+    margin: 1rem
+}
+
+.side-panel-link {
+    text-decoration: none;
+    color: white;    
+}
