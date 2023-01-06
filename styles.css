@@ -9,12 +9,12 @@ html {
 }
 
 #root {
-    display: flex;
+    display: grid;
+    grid-template-columns: max(25vw, 240px) auto;
 }
 
 .side-panel {
     background-color: #059669;
-    width: max(25vw, 240px);
     height: 100vh;
     color: white;
 }
@@ -37,4 +37,30 @@ html {
 .side-panel-link {
     text-decoration: none;
     color: white;    
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem
+}
+
+.btn-primary {
+    color: white;
+    background-color: #059669;
+}
+
+#todos {
+    display: grid;
+    grid-template-columns: 40px 2fr 2fr 1fr 1fr 1fr;
 }
