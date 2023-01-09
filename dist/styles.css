@@ -10,7 +10,7 @@ html {
 
 #root {
     display: grid;
-    grid-template-columns: max(25vw, 240px) auto;
+    grid-template-columns: max(15vw, 240px) auto;
 }
 
 .side-panel {
@@ -52,7 +52,8 @@ header {
     font-size: 1rem;
     border: none;
     border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -60,7 +61,92 @@ header {
     background-color: #059669;
 }
 
+.btn-danger {
+    color: white;
+    background-color: #dc2626;
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+select {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
 #todos {
-    display: grid;
-    grid-template-columns: 40px 2fr 2fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 1rem;
+}
+
+#todos > tr > th:first-child {
+    width: 30px;
+}
+
+#todos > tr > th:nth-child(2) {
+    width: 20%;
+}
+
+#todos > tr > th:nth-child(3) {
+    width: 40%;
+}
+
+#todos > tr > th:nth-child(4) {
+    width: 15%;    
+}
+
+#todos > tr > th:nth-child(5) {
+    width: 80px;
+}
+
+.todo-due-date {
+    text-align: center;
+}
+
+.actions {
+    text-align: center;
+}
+
+.btn-action {
+    margin: 0 0.25rem;
+}
+
+form {
+    padding: 1rem;
+}
+
+#todoForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;    
+    margin: 0 auto;
+}
+
+#edit-todo-dialog {    
+    position: fixed;
+    top: 5rem;
+    width: 400px;
+    left: calc(50vw - 200px);
+    border: 1px solid black;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control input:not([type = "checkbox"]) {
+    display: block;
+    font-size: 1rem;
+    padding: 0.2rem 0.25rem;    
+    width: 100%;
+}
+
+.form-control textarea {
+    display: block;
+    font-size: 1rem;
+    padding: 0.2rem 0.25rem;    
+    width: 100%;
 }
